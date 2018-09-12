@@ -24,11 +24,30 @@ A Gaussian Noise layer was added at the top of the Discriminator, with the idea 
 
 For female blouses, the images were scraped using Scrapy from the Amazon website, and filters were used to select only 4-/5-star products. 
 
-For heels, the images were taken from the UT Zappos50K dataset (http://vision.cs.utexas.edu/projects/finegrained/utzap50k/). They are all catalog images collected from Zappos.com.
+For heels, the images were taken from the [UT Zappos50K dataset](http://vision.cs.utexas.edu/projects/finegrained/utzap50k/). They are all catalog images collected from Zappos.com.
 
 All the images were resized and background-filled to 256x256 resolution before input into the model for training.
 
 ## Results
+Using 10,000 images of women's blouses with 4/5-star ratings scraped from Amazon:
+![Amazon Clothes Epoch 1-300](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/Amazon%20Clothes%20GANs%20epoch%201-300.gif)
 
+Using 5,700 images of Zippo's Heels from the [UT Zappos50K dataset](http://vision.cs.utexas.edu/projects/finegrained/utzap50k/):
+
+![Zippo Heels Epoch 1-165](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/Zippo%20Heels%20GANs%20epoch%201-165.gif)
+
+## Discussion
+Using a DCGANs, we were able to input 256x256 images and train the Generative Adversarial Network to generate random novel images. Depending on the input, it can be useful to generate such images in order to inspire designers to create new designs. As in the case of the Amazon clothes, we can restrict the input of the images to popular items so that the generated images will mainly incorporate popular colours and designs. Further research and tweaking is needed to tailor different GANs to suit different purposes and outputs since as we can see, the current DCGAN architecture seems to work better for shoes rather than clothes as it is easier to generate more abstract designs than frabic-like images. 
+
+## References
+https://github.com/manicman1999/GAN256
+
+https://medium.com/@utk.is.here/keep-calm-and-train-a-gan-pitfalls-and-tips-on-training-generative-adversarial-networks-edd529764aa9
+
+Generative adversarial nets [[arXiv]](https://arxiv.org/abs/1406.2661)
+
+Improved Techniques for Training GANs [[arXiv]](https://arxiv.org/abs/1606.03498)
+
+Improved Training of Wasserstein GANs [[arXiv]](https://arxiv.org/abs/1704.00028)
 
 
