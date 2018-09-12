@@ -28,6 +28,9 @@ For heels, the images were taken from the [UT Zappos50K dataset](http://vision.c
 
 All the images were resized and background-filled to 256x256 resolution before input into the model for training.
 
+## Usage
+Read the code first in the Jupyter Notebook, and create an images folders to store your image dataset (with the names renamed to 5-digit numbers starting from 0, images resized to 256x256). Then just run it and let the community know what you came up with!
+
 ## Results
 Using 10,000 images of women's blouses with 4/5-star ratings scraped from Amazon:
 ![Amazon Clothes Epoch 1-300](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/Amazon%20Clothes%20GANs%20epoch%201-300.gif)
