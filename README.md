@@ -35,9 +35,21 @@ Read the code first in the Jupyter Notebook, and create an images folders to sto
 Using 10,000 images of women's blouses with 4/5-star ratings scraped from Amazon:
 ![Amazon Clothes Epoch 1-300](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/Amazon%20Clothes%20GANs%20epoch%201-300.gif)
 
+213th Iteration:
+![213th Iteration](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/i213.png)
+
+300th Iteration:
+![300th Iteration](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/i300.png)
+
 Using 5,700 images of Zippo's Heels from the [UT Zappos50K dataset](http://vision.cs.utexas.edu/projects/finegrained/utzap50k/):
 
 ![Zippo Heels Epoch 1-165](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/Zippo%20Heels%20GANs%20epoch%201-165.gif)
+
+149th Iteration:
+![149th Iteration](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/i149.png)
+
+158th Iteration
+![158th Iteration](https://github.com/t0nberryking/DCGAN256/blob/master/Example%20Results/i149.png)
 
 ## Discussion
 Using a DCGANs, we were able to input 256x256 images and train the Generative Adversarial Network to generate random novel images. Depending on the input, it can be useful to generate such images in order to inspire designers to create new designs. As in the case of the Amazon clothes, we can restrict the input of the images to popular items so that the generated images will mainly incorporate popular colours and designs. Further research and tweaking is needed to tailor different GANs to suit different purposes and outputs since as we can see, the current DCGAN architecture seems to work better for shoes rather than clothes as it is easier to generate more abstract designs than frabic-like images. 
